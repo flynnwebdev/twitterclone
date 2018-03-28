@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: flynnwebdev
+  api_key: '412215466955718'
+  api_secret: BvnoI7-aS9LJZ-JzOGSjMa1l54U
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: flynnwebdev
+  api_key: '412215466955718'
+  api_secret: BvnoI7-aS9LJZ-JzOGSjMa1l54U
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: flynnwebdev
+  api_key: '412215466955718'
+  api_secret: BvnoI7-aS9LJZ-JzOGSjMa1l54U
+  enhance_image_tag: true
+  static_image_support: false

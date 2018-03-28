@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:show, :edit, :update, :destroy]
-  before_action :check_owner, only: [:edit, :update, :destroy]
+  #before_action :check_owner, only: [:edit, :update, :destroy]
 
   # GET /tweets
   # GET /tweets.json
@@ -77,6 +77,6 @@ class TweetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tweet_params
-      params.require(:tweet).permit(:content, :user_id)
+      params.require(:tweet).permit(:content, :user_id, :image)
     end
 end
