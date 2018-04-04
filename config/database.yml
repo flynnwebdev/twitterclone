@@ -1,20 +1,18 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-#
 default: &default
   adapter: postgresql
+  host: localhost
+  port: 5432
+  user: postgres
+  password: FpvZYUqK9A8S
 
 development:
   <<: *default
-  database: twitter_dev
+  database: twitterclone
 
 test:
   <<: *default
   database: twitter_test
 
 production:
-  adapter: postgresql
-  database: twitter_prod
+  <<: *default
+  database: twitterclone
